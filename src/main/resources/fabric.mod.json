@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "simplertemplatemod",
+	"version": "${version}",
+	"name": "simplerTemplateMod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/simplertemplatemod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"life.magpies.SimplerTemplateMod"
+		],
+		"fabric-datagen": [
+			"life.magpies.SimplerTemplateModDataGenerator"
+		]
+	},
+	"mixins": [
+		"simplertemplatemod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
