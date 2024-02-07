@@ -18,6 +18,9 @@
 		"main": [
 			"life.magpies.SimplerTemplateMod"
 		],
+		"client": [
+			"life.magpies.SimplerTemplateClient"
+		],
 		"fabric-datagen": [
 			"life.magpies.SimplerTemplateModDataGenerator"
 		]
