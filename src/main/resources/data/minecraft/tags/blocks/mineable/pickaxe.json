@@ -1,4 +1,8 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    "simplertemplatemod:citrine_block",
+    "simplertemplatemod:citrine_ore",
+    "simplertemplatemod:deepslate_citrine_ore"
+  ]
 }

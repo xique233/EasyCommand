@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "tutorial-mod:citrine_block",
-    "tutorial-mod:citrine_ore",
-    "tutorial-mod:deepslate_citrine_ore"
+    "simplertemplatemod:citrine_block",
+    "simplertemplatemod:citrine_ore",
+    "simplertemplatemod:deepslate_citrine_ore"
   ]
 }
