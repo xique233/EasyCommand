@@ -25,6 +25,7 @@ public class ModItemGroup {
                 entries.add(ModBlocks.CITRINE_BLOCK);
                 entries.add(ModBlocks.CITRINE_ORE);
                 entries.add(ModBlocks.DEEPSLATE_CITRINE_ORE);
+                entries.add(ModItems.CITRINE_SWORD);
             })
             .build());
 

@@ -1,6 +1,8 @@
 {
   "item.simplertemplatemod.citrine": "黄晶",
   "item.simplertemplatemod.raw_citrine": "粗黄晶",
+  "item.simplertemplatemod.citrine_sword": "黄晶剑",
+
   "itemgroup.simplertemplatemod.citrine": "黄晶",
   "block.simplertemplatemod.citrine_block": "黄晶块",
   "block.simplertemplatemod.citrine_ore": "黄晶矿",
