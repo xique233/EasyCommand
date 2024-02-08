@@ -29,6 +29,7 @@ public class ModItems {
         return Registry.register(Registries.ITEM, new Identifier(SimplerTemplateMod.MOD_ID, name), item);
     }
 
+
     // 物品组
     public static final ItemGroup ITEM_CITRINE =
             Registry.register(Registries.ITEM_GROUP,
@@ -46,6 +47,7 @@ public class ModItems {
                                 entries.add(ModItems.CITRINE_PICKAXE);
                             })
                             .build());
+
     public static void registerModItems() {
         SimplerTemplateMod.LOGGER.debug("Registering mod items for" + SimplerTemplateMod.MOD_ID);
     }
