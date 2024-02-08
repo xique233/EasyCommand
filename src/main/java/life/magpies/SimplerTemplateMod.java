@@ -46,9 +46,7 @@ public class SimplerTemplateMod implements ModInitializer {
 
         if (radius > 30) {
             context.getSource().sendFeedback(() -> Text.literal(("只支持到最大30半径")), false);
-
             return 0;
-
         }
         // 获取玩家的位置
         ServerPlayerEntity player = context.getSource().getPlayer();
