@@ -2,8 +2,11 @@
   "item.simplertemplatemod.citrine": "Citrine",
   "item.simplertemplatemod.raw_citrine": "Raw Citrine",
   "item.simplertemplatemod.citrine_sword": "Citrine Sword",
-  "itemgroup.simplertemplatemod.citrine": "Citrine",
+  "item.simplertemplatemod.mega_phone": "Mega Phone",
+  "itemgroup.simplertemplatemod.citrine": "Citrine Group",
+
   "block.simplertemplatemod.citrine_block": "Citrine Block",
   "block.simplertemplatemod.citrine_ore": "Citrine Ore",
   "block.simplertemplatemod.deepslate_citrine_ore": "Deepslate Citrine Ore"
+
 }

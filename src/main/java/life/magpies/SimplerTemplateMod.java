@@ -2,7 +2,6 @@ package life.magpies;
 
 import com.mojang.brigadier.arguments.IntegerArgumentType;
 import com.mojang.brigadier.context.CommandContext;
-import life.magpies.registry.ModBlocks;
 import life.magpies.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
@@ -27,9 +26,11 @@ public class SimplerTemplateMod implements ModInitializer {
     public void onInitialize() {
         KillItemCommand();
         LOGGER.info("Hello Fabric world!");
-        ModItems.registerModItems();
-        ModBlocks.registerModBlocks();
+        ModItems.registerItem();
+//        ModItems.registerModItems();
+//        ModBlocks.registerBlockItems();
     }
+
 
     private static void KillItemCommand() {
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
