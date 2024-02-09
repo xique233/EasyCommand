@@ -1,6 +1,8 @@
 package life.magpies.registry;
 
 import life.magpies.SimplerTemplateMod;
+import life.magpies.registry.items.MegaphoneItem;
+import life.magpies.registry.items.ModFoodComponents;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.*;
@@ -18,8 +20,7 @@ public class ModItems {
     public static final Item CITRINE = new Item(new FabricItemSettings());
     public static final Item RAW_CITRINE = new Item(new FabricItemSettings());
     public static final Item MEGAPHONE = new MegaphoneItem(new FabricItemSettings().maxCount(1));
-
-
+    public static final Item Pudding = new Item(new Item.Settings().food(ModFoodComponents.FRUIT_PUDDING));
     // 注册组
     public static void registerItem() {
         Registry.register(Registries.ITEM, new Identifier(SimplerTemplateMod.MOD_ID, "citrine"), CITRINE);
@@ -27,6 +28,7 @@ public class ModItems {
         Registry.register(Registries.ITEM, new Identifier(SimplerTemplateMod.MOD_ID, "mega_phone"), MEGAPHONE);
         Registry.register(Registries.ITEM, new Identifier(SimplerTemplateMod.MOD_ID, "citrine_sword"), CITRINE_SWORD);
         Registry.register(Registries.ITEM, new Identifier(SimplerTemplateMod.MOD_ID, "citrine_pickaxe"), CITRINE_PICKAXE);
+        Registry.register(Registries.ITEM, new Identifier(SimplerTemplateMod.MOD_ID, "pudding"), Pudding);
         Registry.register(Registries.ITEM_GROUP, new Identifier(SimplerTemplateMod.MOD_ID, "citrine_group"), ITEM_GROUP);
     }
 
@@ -43,6 +45,7 @@ public class ModItems {
                 entries.add(CITRINE_SWORD);
                 entries.add(CITRINE_PICKAXE);
                 entries.add(MEGAPHONE);
+                entries.add(Pudding);
             })
             .build();
 
