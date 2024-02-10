@@ -11,6 +11,8 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
+import static life.magpies.registry.ModBlocks.*;
+
 
 public class ModItems {
 
@@ -21,14 +23,17 @@ public class ModItems {
     public static final Item RAW_CITRINE = new Item(new FabricItemSettings());
     public static final Item MEGAPHONE = new MegaphoneItem(new FabricItemSettings().maxCount(1));
     public static final Item Pudding = new Item(new Item.Settings().food(ModFoodComponents.FRUIT_PUDDING));
+
     // 注册组
     public static void registerItem() {
+        registerModItems();
         Registry.register(Registries.ITEM, new Identifier(SimplerTemplateMod.MOD_ID, "citrine"), CITRINE);
         Registry.register(Registries.ITEM, new Identifier(SimplerTemplateMod.MOD_ID, "raw_citrine"), RAW_CITRINE);
         Registry.register(Registries.ITEM, new Identifier(SimplerTemplateMod.MOD_ID, "mega_phone"), MEGAPHONE);
         Registry.register(Registries.ITEM, new Identifier(SimplerTemplateMod.MOD_ID, "citrine_sword"), CITRINE_SWORD);
         Registry.register(Registries.ITEM, new Identifier(SimplerTemplateMod.MOD_ID, "citrine_pickaxe"), CITRINE_PICKAXE);
         Registry.register(Registries.ITEM, new Identifier(SimplerTemplateMod.MOD_ID, "pudding"), Pudding);
+        ModBlocks.registerBlock();
         Registry.register(Registries.ITEM_GROUP, new Identifier(SimplerTemplateMod.MOD_ID, "citrine_group"), ITEM_GROUP);
     }
 
@@ -39,9 +44,9 @@ public class ModItems {
             .entries((context, entries) -> {
                 entries.add(CITRINE);
                 entries.add(RAW_CITRINE);
-//                entries.add(CITRINE_BLOCK);
-//                entries.add(CITRINE_ORE);
-//                entries.add(DEEPSLATE_CITRINE_ORE);
+                entries.add(CITRINE_BLOCK);
+                entries.add(CITRINE_ORE);
+                entries.add(DEEPSLATE_CITRINE_ORE);
                 entries.add(CITRINE_SWORD);
                 entries.add(CITRINE_PICKAXE);
                 entries.add(MEGAPHONE);

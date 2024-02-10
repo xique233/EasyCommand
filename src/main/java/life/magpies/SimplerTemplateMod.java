@@ -27,8 +27,6 @@ public class SimplerTemplateMod implements ModInitializer {
         KillItemCommand();
         LOGGER.info("Hello Fabric world!");
         ModItems.registerItem();
-//        ModItems.registerModItems();
-//        ModBlocks.registerBlockItems();
     }
 
 
