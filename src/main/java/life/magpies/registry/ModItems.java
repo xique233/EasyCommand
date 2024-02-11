@@ -4,13 +4,22 @@ import life.magpies.SimplerTemplateMod;
 import life.magpies.registry.commands.ModCommands;
 import life.magpies.registry.items.MegaphoneItem;
 import life.magpies.registry.items.ModFoodComponents;
+import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
+import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-import net.minecraft.item.*;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.SwordItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import net.minecraft.world.gen.GenerationStep;
+import net.minecraft.world.gen.feature.PlacedFeature;
 
 import static life.magpies.registry.ModBlocks.*;
 
@@ -26,6 +35,8 @@ public class ModItems {
     public static final Item RAW_CITRINE = new Item(new FabricItemSettings());
     public static final Item MEGAPHONE = new MegaphoneItem(new FabricItemSettings().maxCount(1));
     public static final Item Pudding = new Item(new Item.Settings().food(ModFoodComponents.FRUIT_PUDDING));
+    // 世界生成矿石
+    public static final RegistryKey<PlacedFeature> CITRINE_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(SimplerTemplateMod.MOD_ID, "citrine_ore_custom"));
 
     // 注册组
     public static void registerItem() {
@@ -42,6 +53,8 @@ public class ModItems {
         Registry.register(Registries.ITEM, new Identifier(SimplerTemplateMod.MOD_ID, "citrine_hoe"), CITRINE_HOE);
         Registry.register(Registries.ITEM, new Identifier(SimplerTemplateMod.MOD_ID, "pudding"), Pudding);
         Registry.register(Registries.ITEM_GROUP, new Identifier(SimplerTemplateMod.MOD_ID, "citrine_group"), ITEM_GROUP);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, CITRINE_ORE_PLACED_KEY);
+
     }
 
     // 物品组
