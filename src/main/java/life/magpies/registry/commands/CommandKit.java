@@ -21,9 +21,8 @@ public class CommandKit {
             dispatcher.register(literal("kit")
                     .executes(context -> execute(context, 5))
                     .then(argument("radius", integer())
-                            .executes(ctx -> {
-                                return execute(ctx, getInteger(ctx, "radius"));
-                            })));
+                            .executes(ctx -> execute(ctx, getInteger(ctx, "radius")))
+                    ));
         });
     }
 

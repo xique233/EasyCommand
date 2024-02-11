@@ -22,6 +22,7 @@ import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.PlacedFeature;
 
 import static life.magpies.registry.ModBlocks.*;
+import static net.minecraft.util.Rarity.RARE;
 
 
 public class ModItems {
@@ -35,14 +36,16 @@ public class ModItems {
     public static final Item RAW_CITRINE = new Item(new FabricItemSettings());
     public static final Item MEGAPHONE = new MegaphoneItem(new FabricItemSettings().maxCount(1));
     public static final Item Pudding = new Item(new Item.Settings().food(ModFoodComponents.FRUIT_PUDDING));
+    public static final Item MUSIC_C = new MusicDiscItem(2, ModSounds.CLICK_SOUND, 300, new FabricItemSettings().maxCount(1).rarity(RARE));
     // 世界生成矿石
     public static final RegistryKey<PlacedFeature> CITRINE_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(SimplerTemplateMod.MOD_ID, "citrine_ore_custom"));
 
     // 注册组
     public static void registerItem() {
-        registerModItems();
         new ModCommands();
         ModBlocks.registerBlock();
+        ModSounds.setupMusic();
+        ModItems.registerModItems();
         Registry.register(Registries.ITEM, new Identifier(SimplerTemplateMod.MOD_ID, "citrine"), CITRINE);
         Registry.register(Registries.ITEM, new Identifier(SimplerTemplateMod.MOD_ID, "raw_citrine"), RAW_CITRINE);
         Registry.register(Registries.ITEM, new Identifier(SimplerTemplateMod.MOD_ID, "mega_phone"), MEGAPHONE);
@@ -52,9 +55,9 @@ public class ModItems {
         Registry.register(Registries.ITEM, new Identifier(SimplerTemplateMod.MOD_ID, "citrine_shovel"), CITRINE_SHOVEL);
         Registry.register(Registries.ITEM, new Identifier(SimplerTemplateMod.MOD_ID, "citrine_hoe"), CITRINE_HOE);
         Registry.register(Registries.ITEM, new Identifier(SimplerTemplateMod.MOD_ID, "pudding"), Pudding);
+        Registry.register(Registries.ITEM, new Identifier(SimplerTemplateMod.MOD_ID, "music_disc_color"), MUSIC_C);
         Registry.register(Registries.ITEM_GROUP, new Identifier(SimplerTemplateMod.MOD_ID, "citrine_group"), ITEM_GROUP);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, CITRINE_ORE_PLACED_KEY);
-
     }
 
     // 物品组
@@ -72,6 +75,7 @@ public class ModItems {
                 entries.add(CITRINE_AXE);
                 entries.add(CITRINE_SHOVEL);
                 entries.add(CITRINE_HOE);
+                entries.add(MUSIC_C);
                 entries.add(MEGAPHONE);
                 entries.add(Pudding);
             })

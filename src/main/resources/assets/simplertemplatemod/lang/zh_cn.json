@@ -4,11 +4,12 @@
   "block.simplertemplatemod.deepslate_citrine_ore": "深层黄晶矿",
   "item.simplertemplatemod.citrine": "黄晶",
   "item.simplertemplatemod.citrine_axe": "黄晶斧",
-  "item.simplertemplatemod.citrine_shovel": "黄晶铲",
   "item.simplertemplatemod.citrine_hoe": "黄晶锄",
   "item.simplertemplatemod.citrine_pickaxe": "黄晶镐",
+  "item.simplertemplatemod.citrine_shovel": "黄晶铲",
   "item.simplertemplatemod.citrine_sword": "黄晶剑",
   "item.simplertemplatemod.mega_phone": "麦克风",
+  "item.simplertemplatemod.music_disc_color": "Color唱片",
   "item.simplertemplatemod.pudding": "布丁",
   "item.simplertemplatemod.raw_citrine": "粗黄晶",
   "itemgroup.simplertemplatemod.citrine": "黄晶"
