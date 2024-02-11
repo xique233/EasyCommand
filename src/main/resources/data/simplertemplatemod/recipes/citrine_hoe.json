@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "simplertemplatemod:citrine"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "## ",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "item": "simplertemplatemod:citrine_hoe"
+  },
+  "show_notification": true
+}

@@ -3,8 +3,8 @@ package life.magpies.registry;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
-public class ModToolMaterials implements ToolMaterial {
-    public static final ModToolMaterials SLIVER = new ModToolMaterials();
+public class CitrineToolMaterials implements ToolMaterial {
+    public static final CitrineToolMaterials SLIVER = new CitrineToolMaterials();
 
     @Override
     public int getDurability() {
@@ -13,7 +13,7 @@ public class ModToolMaterials implements ToolMaterial {
 
     @Override
     public float getMiningSpeedMultiplier() {
-        return 5.0F;
+        return 9.0F;
     }
 
     @Override
@@ -23,7 +23,7 @@ public class ModToolMaterials implements ToolMaterial {
 
     @Override
     public int getMiningLevel() {
-        return 1;
+        return 4;
     }
 
     @Override
