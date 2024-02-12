@@ -32,42 +32,4 @@ public class MusicDiscItem extends Item {
         this.lengthInTicks = lengthInTicks;
         MUSIC_DISCS.put(this.sound, this);
     }
-
-    public ActionResult useOnBlock(ItemUsageContext ctx) {
-        World world = ctx.getWorld();
-        BlockPos blockPos = ctx.getBlockPos();
-        BlockState blockState = world.getBlockState(blockPos);
-        if (blockState.isOf(Blocks.JUKEBOX) && !(Boolean) blockState.get(JukeboxBlock.HAS_RECORD)) {
-            ItemStack itemStack = ctx.getStack();
-            if (!world.isClient) {
-                PlayerEntity playerEntity = ctx.getPlayer();
-                BlockEntity var8 = world.getBlockEntity(blockPos);
-                if (var8 instanceof JukeboxBlockEntity) {
-                    JukeboxBlockEntity jukeboxBlockEntity = (JukeboxBlockEntity) var8;
-                    jukeboxBlockEntity.setStack(itemStack.copy());
-                    world.emitGameEvent(GameEvent.BLOCK_CHANGE, blockPos, GameEvent.Emitter.of(playerEntity, blockState));
-                }
-                itemStack.decrement(1);
-                if (playerEntity != null) {
-                    playerEntity.incrementStat(Stats.PLAY_RECORD);
-                }
-            }
-            return ActionResult.success(world.isClient);
-        } else
-            return ActionResult.PASS;
-    }
-
-    public int getComparatorOutput() {
-        return this.comparatorOutput;
-    }
-
-    /*public void setStack(ItemStack stack) {
-        if (stack.isIn(ItemTags.MUSIC_DISCS) && this.world != null){
-            this.recordStack = stack;
-            this.updataState((Entity)null,true);
-            this.starPlaying();
-        }else if(stack.isEmpty()){
-            this.decreaseStack(1);
-        }
-    }*/
 }

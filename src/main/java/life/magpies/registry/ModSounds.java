@@ -36,5 +36,7 @@ public class ModSounds {
     }
 
     // 公共静态字段，用于访问 CLICK_SOUND
-    public static final SoundEvent CLICK_SOUND = SoundEvent.of(new Identifier(SimplerTemplateMod.MOD_ID, "color"));
+    public static final SoundEvent COLOR = SoundEvent.of(new Identifier(SimplerTemplateMod.MOD_ID, "color"));
+    public static final SoundEvent LOVE = SoundEvent.of(new Identifier(SimplerTemplateMod.MOD_ID, "the_world_is_falling_in_love"));
+    public static final SoundEvent CONGRATULATIONS = SoundEvent.of(new Identifier(SimplerTemplateMod.MOD_ID, "congratulations_and_prosperity"));
 }

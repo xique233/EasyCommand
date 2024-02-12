@@ -35,8 +35,9 @@ public class ModItems {
     public static final Item CITRINE = new Item(new FabricItemSettings());
     public static final Item RAW_CITRINE = new Item(new FabricItemSettings());
     public static final Item MEGAPHONE = new MegaphoneItem(new FabricItemSettings().maxCount(1));
-    public static final Item Pudding = new Item(new Item.Settings().food(ModFoodComponents.FRUIT_PUDDING));
-    public static final Item MUSIC_C = new MusicDiscItem(2, ModSounds.CLICK_SOUND, 300, new FabricItemSettings().maxCount(1).rarity(RARE));
+    public static final Item PUDDING = new Item(new Item.Settings().food(ModFoodComponents.FRUIT_PUDDING));
+    public static final Item MUSIC_DISC_COLOR = new MusicDiscItem(2, ModSounds.COLOR, 300, new FabricItemSettings().maxCount(1).rarity(RARE));
+    public static final Item MUSIC_DISC_CONGRATULATIONS = new MusicDiscItem(2, ModSounds.CONGRATULATIONS, 300, new FabricItemSettings().maxCount(1).rarity(RARE));
     // 世界生成矿石
     public static final RegistryKey<PlacedFeature> CITRINE_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(SimplerTemplateMod.MOD_ID, "citrine_ore_custom"));
 
@@ -54,8 +55,9 @@ public class ModItems {
         Registry.register(Registries.ITEM, new Identifier(SimplerTemplateMod.MOD_ID, "citrine_axe"), CITRINE_AXE);
         Registry.register(Registries.ITEM, new Identifier(SimplerTemplateMod.MOD_ID, "citrine_shovel"), CITRINE_SHOVEL);
         Registry.register(Registries.ITEM, new Identifier(SimplerTemplateMod.MOD_ID, "citrine_hoe"), CITRINE_HOE);
-        Registry.register(Registries.ITEM, new Identifier(SimplerTemplateMod.MOD_ID, "pudding"), Pudding);
-        Registry.register(Registries.ITEM, new Identifier(SimplerTemplateMod.MOD_ID, "music_disc_color"), MUSIC_C);
+        Registry.register(Registries.ITEM, new Identifier(SimplerTemplateMod.MOD_ID, "pudding"), PUDDING);
+        Registry.register(Registries.ITEM, new Identifier(SimplerTemplateMod.MOD_ID, "music_disc_color"), MUSIC_DISC_COLOR);
+        Registry.register(Registries.ITEM, new Identifier(SimplerTemplateMod.MOD_ID, "music_disc_congratulations"), MUSIC_DISC_CONGRATULATIONS);
         Registry.register(Registries.ITEM_GROUP, new Identifier(SimplerTemplateMod.MOD_ID, "citrine_group"), ITEM_GROUP);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, CITRINE_ORE_PLACED_KEY);
     }
@@ -75,9 +77,10 @@ public class ModItems {
                 entries.add(CITRINE_AXE);
                 entries.add(CITRINE_SHOVEL);
                 entries.add(CITRINE_HOE);
-                entries.add(MUSIC_C);
+                entries.add(MUSIC_DISC_COLOR);
+                entries.add(MUSIC_DISC_CONGRATULATIONS);
                 entries.add(MEGAPHONE);
-                entries.add(Pudding);
+                entries.add(PUDDING);
             })
             .build();
 
