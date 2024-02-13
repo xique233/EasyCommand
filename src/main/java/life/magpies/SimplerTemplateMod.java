@@ -16,7 +16,5 @@ public class SimplerTemplateMod implements ModInitializer {
         LOGGER.info("Hello Fabric world!");
         ModItems.registerItem();
     }
-
-
   }
 

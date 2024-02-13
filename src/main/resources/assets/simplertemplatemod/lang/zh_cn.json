@@ -1,4 +1,7 @@
 {
+  "item.simplertemplatemod.pudding": "布丁",
+  "item.simplertemplatemod.raw_citrine": "粗黄晶",
+  "itemgroup.simplertemplatemod.citrine": "黄晶",
   "block.simplertemplatemod.citrine_block": "黄晶块",
   "block.simplertemplatemod.citrine_ore": "黄晶矿",
   "block.simplertemplatemod.deepslate_citrine_ore": "深层黄晶矿",
@@ -18,11 +21,59 @@
   "item.simplertemplatemod.music_disc_love.desc": "世界は恋に落ちている - CHICO",
   "subtitles.simplertemplatemod.the_world_is_falling_in_love": "世界は恋に落ちている - CHICO",
 
+  "item.simplertemplatemod.music_disc_romeo": "ロメオ",
+  "item.simplertemplatemod.music_disc_romeo.desc": "ロメオ - HoneyWorks、内山昂輝、島﨑信長",
+  "subtitles.simplertemplatemod.romeo": "ロメオ - HoneyWorks、内山昂輝、島﨑信長",
+
+  "item.simplertemplatemod.music_disc_happiness": "幸せ ",
+  "item.simplertemplatemod.music_disc_happiness.desc": "幸せ - From THE FIRST TAKE - CHiCO",
+  "subtitles.simplertemplatemod.happiness": "幸せ - From THE FIRST TAKE - CHiCO",
+
+  "item.simplertemplatemod.music_disc_puberty": "テレカクシ思春期",
+  "item.simplertemplatemod.music_disc_puberty.desc": "テレカクシ思春期 - HoneyWorks、鎖那",
+  "subtitles.simplertemplatemod.puberty": "テレカクシ思春期 - HoneyWorks、鎖那",
+
+  "item.simplertemplatemod.music_disc_proud_idol": "誇り高きアイドル",
+  "item.simplertemplatemod.music_disc_proud_idol.desc": "誇り高きアイドル - HoneyWorks、Kotoha",
+  "subtitles.simplertemplatemod.proud_idol": "誇り高きアイドル - HoneyWorks、Kotoha",
+
   "item.simplertemplatemod.music_disc_congratulations": "恭喜发财",
   "item.simplertemplatemod.music_disc_congratulations.desc": "恭喜发财 - 刘德华",
-  "item.simplertemplatemod.congratulations_and_prosperity": "恭喜发财 - 刘德华",
+  "subtitles.simplertemplatemod.congratulations_and_prosperity": "恭喜发财 - 刘德华",
 
-  "item.simplertemplatemod.pudding": "布丁",
-  "item.simplertemplatemod.raw_citrine": "粗黄晶",
-  "itemgroup.simplertemplatemod.citrine": "黄晶"
-}
+  "item.simplertemplatemod.music_disc_good_friday_morning": "金曜日のおはよう",
+  "item.simplertemplatemod.music_disc_good_friday_morning.desc": "金曜日のおはよう - 鎖那",
+  "subtitles.simplertemplatemod.good_friday_morning": "金曜日のおはよう - 鎖那",
+
+  "item.simplertemplatemod.music_disc_all_i_can_give_you": "All I Can Give You",
+  "item.simplertemplatemod.music_disc_all_i_can_give_you.desc": "All I Can Give You - Xeuphoria",
+  "subtitles.simplertemplatemod.all_i_can_give_you": "All I Can Give You - Xeuphoria",
+
+  "item.simplertemplatemod.music_disc_the_scandal_on_thursday": "木曜日のスキャンダル",
+  "item.simplertemplatemod.music_disc_the_scandal_on_thursday.desc": "木曜日のスキャンダル - HoneyWorks、雨宮天",
+  "subtitles.simplertemplatemod.the_scandal_on_thursday": "木曜日のスキャンダル - HoneyWorks、雨宮天",
+
+  "item.simplertemplatemod.music_disc_tokyo_summer_meeting": "東京サマーセッション",
+  "item.simplertemplatemod.music_disc_tokyo_summer_meeting.desc": "東京サマーセッション - 鎖那-Chico",
+  "subtitles.simplertemplatemod.tokyo_summer_meeting": "東京サマーセッション - 鎖那-Chico",
+
+  "item.simplertemplatemod.music_disc_the_oath_of_the_heart": "ハートの誓い",
+  "item.simplertemplatemod.music_disc_the_oath_of_the_heart.desc": "ハートの誓い - CHiCO",
+  "subtitles.simplertemplatemod.the_oath_of_the_heart": "ハートの誓い - CHiCO",
+
+  "item.simplertemplatemod.music_disc_tokyo_spring_meeting": "東京スプリングセッション",
+  "item.simplertemplatemod.music_disc_tokyo_spring_meeting.desc": "東京スプリングセッション - HoneyWorks、神谷浩史、戸松遥、梶裕貴、阿澄佳奈、鈴村健一、豊崎愛生_1",
+  "subtitles.simplertemplatemod.tokyo_spring_meeting": "東京スプリングセッション - HoneyWorks、神谷浩史、戸松遥、梶裕貴、阿澄佳奈、鈴村健一、豊崎愛生_1",
+
+  "item.simplertemplatemod.music_disc_tuesday_is_kiss_day": "火曜日はチューデイ",
+  "item.simplertemplatemod.music_disc_tuesday_is_kiss_day.desc": "火曜日はチューデイ - another-story-HoneyWorks、雨宮天",
+  "subtitles.simplertemplatemod.tuesday_is_kiss_day": "火曜日はチューデイ - another-story-HoneyWorks、雨宮天",
+
+  "item.simplertemplatemod.music_disc_tokyo_weather_meeting": "東京ウインターセッション",
+  "item.simplertemplatemod.music_disc_tokyo_weather_meeting.desc": "東京ウインターセッション - HoneyWorks、神谷浩史、戸松遥、梶裕貴、阿澄佳奈、鈴村健一、豊崎愛生",
+  "subtitles.simplertemplatemod.tokyo_weather_meeting": "東京ウインターセッション - HoneyWorks、神谷浩史、戸松遥、梶裕貴、阿澄佳奈、鈴村健一、豊崎愛生",
+
+  "item.simplertemplatemod.music_disc_bambo_disco": "バンブーディスコ",
+  "item.simplertemplatemod.music_disc_bambo_disco.desc": "バンブーディスコ - Yunomi-TORIENA",
+  "subtitles.simplertemplatemod.bambo_disco": "バンブーディスコ - Yunomi-TORIENA,"
+ }

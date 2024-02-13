@@ -28,5 +28,135 @@
         "stream": true
       }
     ]
+  },
+  "romeo": {
+    "category": "record",
+    "subtitle": "subtitles.simplertemplatemod.romeo",
+    "sounds": [
+      {
+        "name": "simplertemplatemod:romeo",
+        "stream": true
+      }
+    ]
+  },
+  "happiness": {
+    "category": "record",
+    "subtitle": "subtitles.simplertemplatemod.happiness",
+    "sounds": [
+      {
+        "name": "simplertemplatemod:happiness",
+        "stream": true
+      }
+    ]
+  },
+  "puberty": {
+    "category": "record",
+    "subtitle": "subtitles.simplertemplatemod.puberty",
+    "sounds": [
+      {
+        "name": "simplertemplatemod:puberty",
+        "stream": true
+      }
+    ]
+  },
+  "proud_idol": {
+    "category": "record",
+    "subtitle": "subtitles.simplertemplatemod.proud_idol",
+    "sounds": [
+      {
+        "name": "simplertemplatemod:proud_idol",
+        "stream": true
+      }
+    ]
+  },
+  "good_friday_morning": {
+    "category": "record",
+    "subtitle": "subtitles.simplertemplatemod.good_friday_morning",
+    "sounds": [
+      {
+        "name": "simplertemplatemod:good_friday_morning",
+        "stream": true
+      }
+    ]
+  },
+  "all_i_can_give_you": {
+    "category": "record",
+    "subtitle": "subtitles.simplertemplatemod.all_i_can_give_you",
+    "sounds": [
+      {
+        "name": "simplertemplatemod:all_i_can_give_you",
+        "stream": true
+      }
+    ]
+  },
+  "the_scandal_on_thursday": {
+    "category": "record",
+    "subtitle": "subtitles.simplertemplatemod.the_scandal_on_thursday",
+    "sounds": [
+      {
+        "name": "simplertemplatemod:the_scandal_on_thursday",
+        "stream": true
+      }
+    ]
+  },
+  "the_oath_of_the_heart": {
+    "category": "record",
+    "subtitle": "subtitles.simplertemplatemod.the_oath_of_the_heart",
+    "sounds": [
+      {
+        "name": "simplertemplatemod:the_oath_of_the_heart",
+        "stream": true
+      }
+    ]
+  },
+  "tokyo_summer_meeting": {
+    "category": "record",
+    "subtitle": "subtitles.simplertemplatemod.tokyo_summer_meeting",
+    "sounds": [
+      {
+        "name": "simplertemplatemod:tokyo_summer_meeting",
+        "stream": true
+      }
+    ]
+  },
+  "tokyo_winter_meeting": {
+    "category": "record",
+    "subtitle": "subtitles.simplertemplatemod.tokyo_spring_meeting",
+    "sounds": [
+      {
+        "name": "simplertemplatemod:tokyo_spring_meeting",
+        "stream": true
+      }
+    ]
+  },
+  "tuesday_is_kiss_day": {
+    "category": "record",
+    "subtitle": "subtitles.simplertemplatemod.tuesday_is_kiss_day",
+    "sounds": [
+      {
+        "name": "simplertemplatemod:tuesday_is_kiss_day",
+        "stream": true
+      }
+    ]
+  },
+  "tokyo_weather_meeting": {
+    "category": "record",
+    "subtitle": "subtitles.simplertemplatemod.tokyo_weather_meeting",
+    "sounds": [
+      {
+        "name": "simplertemplatemod:tokyo_weather_meeting",
+        "stream": true
+      }
+    ]
+  },
+  "bambu_disco": {
+    "category": "record",
+    "subtitle": "subtitles.simplertemplatemod.bambu_disco",
+    "sounds": [
+      {
+        "name": "simplertemplatemod:bambu_disco",
+        "stream": true
+      }
+    ]
   }
 }
