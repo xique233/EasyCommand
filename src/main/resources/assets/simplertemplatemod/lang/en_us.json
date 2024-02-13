@@ -8,8 +8,19 @@
   "item.simplertemplatemod.citrine_hoe": "Citrine Shovel",
   "item.simplertemplatemod.mega_phone": "Mega Phone",
   "item.simplertemplatemod.pudding": "Pudding",
-  "item.simplertemplatemod.music_disc_color": "Music Color",
+
+  "item.simplertemplatemod.music_disc_color": "color",
+  "item.simplertemplatemod.music_disc_color.desc": "Color - CHICO",
+  "subtitles.simplertemplatemod.color": "Color - CHICO",
+
+  "item.simplertemplatemod.music_disc_love": "世界は恋に落ちている",
+  "item.simplertemplatemod.music_disc_love.desc": "世界は恋に落ちている - CHICO",
+  "subtitles.simplertemplatemod.the_world_is_falling_in_love": "世界は恋に落ちている - CHICO",
+
   "item.simplertemplatemod.music_disc_congratulations": "Music Congratulations And Prosperity",
+  "item.simplertemplatemod.music_disc_congratulations.desc": "Music Congratulations And Prosperity",
+  "item.simplertemplatemod.congratulations_and_prosperity": "恭喜发财 - 刘德华",
+
   "itemgroup.simplertemplatemod.citrine": "Citrine Group",
 
   "block.simplertemplatemod.citrine_block": "Citrine Block",

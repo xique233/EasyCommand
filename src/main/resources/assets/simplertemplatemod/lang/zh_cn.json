@@ -9,8 +9,19 @@
   "item.simplertemplatemod.citrine_shovel": "黄晶铲",
   "item.simplertemplatemod.citrine_sword": "黄晶剑",
   "item.simplertemplatemod.mega_phone": "麦克风",
-  "item.simplertemplatemod.music_disc_color": "Color唱片",
-  "item.simplertemplatemod.music_disc_congratulations": "恭喜发财唱片",
+
+  "item.simplertemplatemod.music_disc_color": "color",
+  "item.simplertemplatemod.music_disc_color.desc": "color - CHICO",
+  "subtitles.simplertemplatemod.color": "color - CHICO",
+
+  "item.simplertemplatemod.music_disc_love": "世界は恋に落ちている",
+  "item.simplertemplatemod.music_disc_love.desc": "世界は恋に落ちている - CHICO",
+  "subtitles.simplertemplatemod.the_world_is_falling_in_love": "世界は恋に落ちている - CHICO",
+
+  "item.simplertemplatemod.music_disc_congratulations": "恭喜发财",
+  "item.simplertemplatemod.music_disc_congratulations.desc": "恭喜发财 - 刘德华",
+  "item.simplertemplatemod.congratulations_and_prosperity": "恭喜发财 - 刘德华",
+
   "item.simplertemplatemod.pudding": "布丁",
   "item.simplertemplatemod.raw_citrine": "粗黄晶",
   "itemgroup.simplertemplatemod.citrine": "黄晶"

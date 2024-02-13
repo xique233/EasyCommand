@@ -1,7 +1,7 @@
 {
   "color": {
-    "subtitle": "color",
-    "replace": "true",
+    "category": "record",
+    "subtitle": "subtitles.simplertemplatemod.color",
     "sounds": [
       {
         "name": "simplertemplatemod:color",
@@ -10,8 +10,8 @@
     ]
   },
   "the_world_is_falling_in_love": {
-    "subtitle": "the_world_is_falling_in_love",
-    "replace": "true",
+    "category": "record",
+    "subtitle": "subtitles.simplertemplatemod.the_world_is_falling_in_love",
     "sounds": [
       {
         "name": "simplertemplatemod:the_world_is_falling_in_love",
@@ -20,8 +20,8 @@
     ]
   },
   "congratulations_and_prosperity": {
-    "subtitle": "congratulations_and_prosperity",
-    "replace": "true",
+    "category": "record",
+    "subtitle": "subtitles.simplertemplatemod.congratulations_and_prosperity",
     "sounds": [
       {
         "name": "simplertemplatemod:congratulations_and_prosperity",
