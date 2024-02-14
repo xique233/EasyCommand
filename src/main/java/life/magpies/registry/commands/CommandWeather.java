@@ -14,10 +14,10 @@ public class CommandWeather {
     public static void register() {
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
             dispatcher.register(literal("sunny")
-                    .requires(source -> source.hasPermissionLevel(1))
+                    .requires(source -> source.hasPermissionLevel(3))
                     .executes(ctx -> execute(ctx, true))); // 设置时间为晴天
             dispatcher.register(literal("rain")
-                    .requires(source -> source.hasPermissionLevel(1))
+                    .requires(source -> source.hasPermissionLevel(3))
                     .executes(ctx -> execute(ctx, false))); // 设置时间为雨天
         });
     }

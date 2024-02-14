@@ -14,10 +14,10 @@ public class CommandDay {
     public static void register() {
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
             dispatcher.register(literal("sun")
-                    .requires(source -> source.hasPermissionLevel(1))
+                    .requires(source -> source.hasPermissionLevel(3))
                     .executes(ctx -> execute(ctx, true))); // 设置时间为白天
             dispatcher.register(literal("night")
-                    .requires(source -> source.hasPermissionLevel(1))
+                    .requires(source -> source.hasPermissionLevel(3))
                     .executes(ctx -> execute(ctx, false))); // 设置时间为黑夜
         });
     }

@@ -35,6 +35,8 @@ public class ModItems {
     public static final Item RAW_CITRINE = new Item(new FabricItemSettings());
     public static final Item MEGAPHONE = new MegaphoneItem(new FabricItemSettings().maxCount(1));
     public static final Item PUDDING = new Item(new Item.Settings().food(ModFoodComponents.FRUIT_PUDDING));
+
+    // 唱片
     public static final Item MUSIC_DISC_COLOR = new MusicDiscItem(12, ModSounds.COLOR, new FabricItemSettings().maxCount(1).rarity(RARE), 250);
     public static final Item MUSIC_DISC_LOVE = new MusicDiscItem(8, ModSounds.LOVE, new FabricItemSettings().maxCount(1).rarity(RARE), 330);
     public static final Item MUSIC_DISC_ROMEO = new MusicDiscItem(12, ModSounds.ROMEO, new FabricItemSettings().maxCount(1).rarity(RARE), 330);
