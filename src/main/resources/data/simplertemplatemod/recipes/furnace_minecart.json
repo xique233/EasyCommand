@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#I#",
+        "###"
+    ],
+    "key": {
+        "#": { "tag": "minecraft:stone_crafting_materials" },
+        "I": { "item": "minecraft:minecart" }
+    },
+    "result": { "item": "minecraft:furnace_minecart", "count": 1 }
+}

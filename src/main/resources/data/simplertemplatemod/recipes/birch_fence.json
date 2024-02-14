@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##L",
+        "##L",
+        "##L"
+    ],
+    "key": {
+        "#": { "item": "minecraft:birch_planks" },
+        "L": { "item": "minecraft:birch_log" }
+    },
+    "result": { "item": "minecraft:birch_fence", "count": 36 }
+}

@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##L",
+        "##L",
+        "##L"
+    ],
+    "key": {
+        "#": { "item": "minecraft:dark_oak_planks" },
+        "L": { "item": "minecraft:dark_oak_log" }
+    },
+    "result": { "item": "minecraft:dark_oak_fence", "count": 36 }
+}

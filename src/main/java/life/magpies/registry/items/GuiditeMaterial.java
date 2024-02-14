@@ -27,7 +27,7 @@ public class GuiditeMaterial implements ToolMaterial {
 
     @Override
     public int getEnchantability() {
-        return 22;
+        return 18;
     }
 
     @Override

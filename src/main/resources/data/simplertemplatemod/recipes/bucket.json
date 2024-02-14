@@ -1,0 +1,10 @@
+{
+    "type": "smelting",
+    "ingredient": {
+        "item": "minecraft:milk_bucket"
+    },
+    "result": "minecraft:bucket",
+    "experience": 0.8,
+    "cookingtime": 200,
+    "ingredientCount": 3
+}
