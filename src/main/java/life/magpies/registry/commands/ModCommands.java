@@ -4,5 +4,6 @@ public class ModCommands {
     public ModCommands() {
         CommandKit.register();
         CommandDay.register();
+        CommandWeather.register();
     }
 }
