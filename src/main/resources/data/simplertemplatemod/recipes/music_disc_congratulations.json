@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "simplertemplatemod:citrine"
+    }
+  },
+  "pattern": [
+    " # ",
+    "   ",
+    "   "
+  ],
+  "result": {
+    "item": "simplertemplatemod:music_disc_congratulations"
+  },
+  "show_notification": true
+}

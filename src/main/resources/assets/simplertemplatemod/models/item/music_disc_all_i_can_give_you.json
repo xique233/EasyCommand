@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "simplertemplatemod:item/music_disc_all_i_can_give_you"
+  }
+}

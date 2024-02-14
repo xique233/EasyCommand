@@ -13,7 +13,7 @@ import static net.minecraft.server.command.CommandManager.literal;
 public class CommandDay {
     public static void register() {
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
-            dispatcher.register(literal("sun")
+            dispatcher.register(literal("day")
                     .requires(source -> source.hasPermissionLevel(3))
                     .executes(ctx -> execute(ctx, true))); // 设置时间为白天
             dispatcher.register(literal("night")

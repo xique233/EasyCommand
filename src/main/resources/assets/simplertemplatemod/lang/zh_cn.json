@@ -1,7 +1,6 @@
 {
   "item.simplertemplatemod.pudding": "布丁",
   "item.simplertemplatemod.raw_citrine": "粗黄晶",
-  "itemgroup.simplertemplatemod.citrine": "黄晶",
   "block.simplertemplatemod.citrine_block": "黄晶块",
   "block.simplertemplatemod.citrine_ore": "黄晶矿",
   "block.simplertemplatemod.deepslate_citrine_ore": "深层黄晶矿",
@@ -75,5 +74,9 @@
 
   "item.simplertemplatemod.music_disc_bambo_disco": "バンブーディスコ",
   "item.simplertemplatemod.music_disc_bambo_disco.desc": "バンブーディスコ - Yunomi-TORIENA",
-  "subtitles.simplertemplatemod.bambo_disco": "バンブーディスコ - Yunomi-TORIENA,"
- }
+  "subtitles.simplertemplatemod.bambo_disco": "バンブーディスコ - Yunomi-TORIENA,",
+
+  "itemgroup.simplertemplatemod.citrine": "黄晶",
+  "itemgroup.simplertemplatemod.music_discs": "唱片",
+  "itemgroup.simplertemplatemod.citrine_items": "黄晶工具"
+}

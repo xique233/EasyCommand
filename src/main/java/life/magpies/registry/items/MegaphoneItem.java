@@ -31,6 +31,6 @@ public class MegaphoneItem extends Item {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("好像是能喊出来的大喇叭").formatted(Formatting.DARK_PURPLE) );
+        tooltip.add(Text.translatable("好像是能喊出来的大喇叭 其实只是测试用的").formatted(Formatting.DARK_PURPLE) );
     }
 }

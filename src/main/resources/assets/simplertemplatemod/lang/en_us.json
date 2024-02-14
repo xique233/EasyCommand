@@ -77,7 +77,8 @@
   "item.simplertemplatemod.music_disc_bambo_disco.desc": "バンブーディスコ - Yunomi-TORIENA",
   "subtitles.simplertemplatemod.bambo_disco": "バンブーディスコ - Yunomi-TORIENA,",
 
-  "itemgroup.simplertemplatemod.citrine": "Citrine Group"
+  "itemgroup.simplertemplatemod.citrine_items": "Citrine Group",
+  "itemgroup.simplertemplatemod.music_discs": "Music Discs Group"
 
 
 }

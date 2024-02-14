@@ -1,5 +1,6 @@
 package life.magpies;
 
+import life.magpies.registry.ModItemGrounds;
 import life.magpies.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -14,7 +15,9 @@ public class SimplerTemplateMod implements ModInitializer {
     @Override
     public void onInitialize() {
         LOGGER.info("Hello Fabric world!");
+        ModItemGrounds.buildItemGroups();
         ModItems.registerItem();
+
     }
   }
 
