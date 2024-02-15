@@ -1,13 +1,10 @@
 package life.magpies.registry;
 
 import life.magpies.SimplerTemplateMod;
-import life.magpies.registry.commands.ModCommands;
 import life.magpies.registry.items.MegaphoneItem;
 import life.magpies.registry.items.ModFoodComponents;
 import life.magpies.registry.items.custom.*;
 import life.magpies.registry.sounds.ModSounds;
-import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
-import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
@@ -19,7 +16,6 @@ import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
-import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.PlacedFeature;
 
 import static net.minecraft.util.Rarity.RARE;
@@ -52,22 +48,13 @@ public class ModItems {
     public static final Item MUSIC_DISC_TOKYO_SUMMER_MEETING = registerMusicDiscsItem("music_disc_tokyo_summer_meeting", new MusicDiscItem(8, ModSounds.TOKYO_SUMMER_MEETING, new FabricItemSettings().maxCount(1).rarity(RARE), 250));
     public static final Item MUSIC_DISC_TOKYO_SPRING_MEETING = registerMusicDiscsItem("music_disc_tokyo_spring_meeting", new MusicDiscItem(8, ModSounds.TOKYO_SPRING_MEETING, new FabricItemSettings().maxCount(1).rarity(RARE), 250));
     public static final Item MUSIC_DISC_TUESDAY_IS_KISS_DAY = registerMusicDiscsItem("music_disc_tuesday_is_kiss_day", new MusicDiscItem(6, ModSounds.TUESDAY_IS_KISS_DAY, new FabricItemSettings().maxCount(1).rarity(RARE), 270));
-    public static final Item MUSIC_DISC_TOKYO_WEATHER_MEETING = registerMusicDiscsItem("music_disc_tokyo_weather_meeting", new MusicDiscItem(8, ModSounds.TOKYO_WEATHER_MEETING, new FabricItemSettings().maxCount(1).rarity(RARE), 260));
+    public static final Item MUSIC_DISC_TOKYO_WINTER_MEETING = registerMusicDiscsItem("music_disc_tokyo_winter_meeting", new MusicDiscItem(8, ModSounds.TOKYO_WINTER_MEETING, new FabricItemSettings().maxCount(1).rarity(RARE), 260));
     public static final Item MUSIC_DISC_BAMBU_DISCO = registerMusicDiscsItem("music_disc_bambo_disco", new MusicDiscItem(8, ModSounds.BAMBU_DISCO, new FabricItemSettings().maxCount(1).rarity(RARE), 200));
     // 世界生成矿石
     public static final RegistryKey<PlacedFeature> CITRINE_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(SimplerTemplateMod.MOD_ID, "citrine_ore_custom"));
 
+
     // 注册组
-    public static void registerItem() {
-        new ModCommands();
-        ModBlocks.registerBlock();
-        ModItems.registerModItems();
-        ModSounds.registerSounds();
-        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, CITRINE_ORE_PLACED_KEY);
-    }
-
-    // 物品组
-
     private static Item registerMusicDiscsItem(String name, Item item) {
         return registerItem(name, item, ModItemGrounds.MUSIC_DISCS);
     }

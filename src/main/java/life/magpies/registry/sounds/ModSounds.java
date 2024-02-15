@@ -20,8 +20,8 @@ public class ModSounds {
     public static final SoundEvent THE_OATH_OF_THE_HEART = registerSoundEvent("the_oath_of_the_heart");
     public static final SoundEvent TOKYO_SUMMER_MEETING = registerSoundEvent("tokyo_summer_meeting");
     public static final SoundEvent TOKYO_SPRING_MEETING = registerSoundEvent("tokyo_spring_meeting");
+    public static final SoundEvent TOKYO_WINTER_MEETING = registerSoundEvent("tokyo_winter_meeting");
     public static final SoundEvent TUESDAY_IS_KISS_DAY = registerSoundEvent("tuesday_is_kiss_day");
-    public static final SoundEvent TOKYO_WEATHER_MEETING = registerSoundEvent("tokyo_weather_meeting");
     public static final SoundEvent BAMBU_DISCO = registerSoundEvent("bambu_disco");
     // 注册声音事件
     private static SoundEvent registerSoundEvent(String name) {

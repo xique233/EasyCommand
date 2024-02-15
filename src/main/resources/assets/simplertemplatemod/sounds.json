@@ -139,12 +139,12 @@
       }
     ]
   },
-  "tokyo_weather_meeting": {
+  "tokyo_winter_meeting": {
     "category": "record",
-    "subtitle": "subtitles.simplertemplatemod.tokyo_weather_meeting",
+    "subtitle": "subtitles.simplertemplatemod.tokyo_winter_meeting",
     "sounds": [
       {
-        "name": "simplertemplatemod:tokyo_weather_meeting",
+        "name": "simplertemplatemod:tokyo_winter_meeting",
         "stream": true
       }
     ]
