@@ -7,6 +7,7 @@ public class ModCommands {
         CommandKit.register();
         CommandDay.register();
         CommandWeather.register();
+        CommandList.register();
     }
     public static void registerModCommand() {
         SimplerTemplateMod.LOGGER.debug("Registering mod command for" + SimplerTemplateMod.MOD_ID);

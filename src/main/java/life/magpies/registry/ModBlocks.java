@@ -36,6 +36,7 @@ public class ModBlocks {
                     .strength(4.0F, 4.0F));
 
     // 注册组
+
     public static void registerBlock() {
         registerModBlocks();
         Registry.register(Registries.BLOCK, new Identifier(SimplerTemplateMod.MOD_ID, "citrine_block"), CITRINE_BLOCK);
