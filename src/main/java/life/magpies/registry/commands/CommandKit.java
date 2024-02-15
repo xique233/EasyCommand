@@ -1,6 +1,7 @@
 package life.magpies.registry.commands;
 
 import com.mojang.brigadier.context.CommandContext;
+import life.magpies.SimplerTemplateMod;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.server.command.ServerCommandSource;
@@ -28,7 +29,7 @@ public class CommandKit {
 
     private static int execute(CommandContext<ServerCommandSource> context, int radius) {
         if (radius > 30) {
-            context.getSource().sendFeedback(() -> Text.literal(("只支持到最大30半径")), false);
+            context.getSource().sendFeedback(() -> Text.translatable(("command." + SimplerTemplateMod.MOD_ID + ".radius")), false);
             return 0;
         }
         // 获取玩家的对象

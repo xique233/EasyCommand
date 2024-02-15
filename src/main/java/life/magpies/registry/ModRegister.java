@@ -14,7 +14,6 @@ public class ModRegister {
         ModItems.registerModItems();
         ModSounds.registerSounds();
         ModCommands.registerCommands();
-
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, CITRINE_ORE_PLACED_KEY);
     }
 }

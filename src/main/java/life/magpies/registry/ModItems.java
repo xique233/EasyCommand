@@ -24,7 +24,7 @@ import static net.minecraft.util.Rarity.RARE;
 public class ModItems {
     // 注册物品
     public static final Item CITRINE = registerCitrineItems("citrine", new Item(new FabricItemSettings()));
-    public static final Item CITRINE_SWORD = registerCitrineItems("citrine_sword", new SwordItem(CitrineToolMaterials.SLIVER, 2, -2.4f, new FabricItemSettings()));
+    public static final Item CITRINE_SWORD = registerCitrineItems("citrine_sword", new SwordItem(CitrineToolMaterials.SLIVER, 2, -2.2f, new FabricItemSettings()));
     public static final Item CITRINE_PICKAXE = registerCitrineItems("citrine_pickaxe", new CitrinePickaxeItem(CitrineToolMaterials.SLIVER, 1, -2.8F, new Item.Settings()));
     public static final Item CITRINE_AXE = registerCitrineItems("citrine_axe", new CitrineAxeItem(CitrineToolMaterials.SLIVER, 5, -3.0F, new Item.Settings()));
     public static final Item CITRINE_SHOVEL = registerCitrineItems("citrine_shovel", new CitrineShovelItem(CitrineToolMaterials.SLIVER, 1, -3F, new Item.Settings()));

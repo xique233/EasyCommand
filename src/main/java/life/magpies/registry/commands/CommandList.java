@@ -1,6 +1,7 @@
 package life.magpies.registry.commands;
 
 import com.mojang.brigadier.context.CommandContext;
+import life.magpies.SimplerTemplateMod;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.text.Text;
@@ -16,13 +17,14 @@ public class CommandList {
 
         });
     }
+
     public static int execute(CommandContext<ServerCommandSource> ctx) {
         ServerCommandSource source = ctx.getSource();
-        source.sendMessage(Text.literal("/kit -> 清除附近的掉落物 可选填半径最大30"));
-        source.sendMessage(Text.literal("/day -> 白天"));
-        source.sendMessage(Text.literal("/night -> 黑夜"));
-        source.sendMessage(Text.literal("/sun -> 晴天"));
-        source.sendMessage(Text.literal("/rain -> 雨天"));
+        source.sendMessage(Text.translatable("command." + SimplerTemplateMod.MOD_ID + ".explain_kit"));
+        source.sendMessage(Text.translatable("command." + SimplerTemplateMod.MOD_ID + ".explain_day"));
+        source.sendMessage(Text.translatable("command." + SimplerTemplateMod.MOD_ID + ".explain_night"));
+        source.sendMessage(Text.translatable("command." + SimplerTemplateMod.MOD_ID + ".explain_sun"));
+        source.sendMessage(Text.translatable("command." + SimplerTemplateMod.MOD_ID + ".explain_rain"));
         return 1;
     }
 }

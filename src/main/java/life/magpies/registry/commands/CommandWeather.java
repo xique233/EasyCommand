@@ -1,6 +1,7 @@
 package life.magpies.registry.commands;
 
 import com.mojang.brigadier.context.CommandContext;
+import life.magpies.SimplerTemplateMod;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -26,7 +27,7 @@ public class CommandWeather {
         ServerCommandSource source = ctx.getSource();
         ServerPlayerEntity player = source.getPlayer();
         if (player == null) {
-            source.sendError(Text.literal("只有玩家可以执行此命令!"));
+            source.sendError(Text.translatable("command." + SimplerTemplateMod.MOD_ID + ".warning"));
             return 0;
         }
         ServerWorld world = player.getServerWorld();
@@ -37,12 +38,12 @@ public class CommandWeather {
                 world.setWeather(0, 0, false, false);
 
             } else {
-                world.setWeather(0,12000,true,true);
+                world.setWeather(0, 12000, true, true);
             }
-            source.sendFeedback(() -> Text.literal("天气已设置为" + (isDay ? "晴天" : "雨天")), false);
+            source.sendFeedback(() -> Text.translatable("command." + SimplerTemplateMod.MOD_ID + (isDay ? ".sunny" : ".rain")), false);
             return 1;
         } else
-            source.sendFeedback(() -> Text.literal("当前维度无法设置天气"), false);
+            source.sendFeedback(() -> Text.translatable("command." + SimplerTemplateMod.MOD_ID + ".dimension_warning_weather"), false);
         return 0;
     }
 }

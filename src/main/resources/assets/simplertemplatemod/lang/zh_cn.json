@@ -78,5 +78,22 @@
 
   "itemgroup.simplertemplatemod.citrine": "黄晶",
   "itemgroup.simplertemplatemod.music_discs": "唱片",
-  "itemgroup.simplertemplatemod.citrine_items": "黄晶工具"
+  "itemgroup.simplertemplatemod.citrine_items": "黄晶工具",
+
+  "command.simplertemplatemod.warning": "只有玩家可以执行此命令!",
+  "command.simplertemplatemod.dimension_warning_time": "当前维度无法设置时间!",
+  "command.simplertemplatemod.day":"时间已设置为白天",
+  "command.simplertemplatemod.night":"时间已设置为黑夜",
+
+  "command.simplertemplatemod.radius": "只支持到最大30半径",
+
+  "command.simplertemplatemod.dimension_warning_weather": "当前维度无法设置天气!",
+  "command.simplertemplatemod.sunny":"天气已设置为晴天",
+  "command.simplertemplatemod.rain":"天气已设置为雨天",
+
+  "command.simplertemplatemod.explain_kit":"/kit -> 清除附近的掉落物 可选填半径最大30",
+  "command.simplertemplatemod.explain_day":"/day -> 设定白天",
+  "command.simplertemplatemod.explain_night":"/night -> 设定黑夜",
+  "command.simplertemplatemod.explain_sun":"/sun -> 设定晴天",
+  "command.simplertemplatemod.explain_rain":"/rain -> 设定雨天"
 }

@@ -79,7 +79,23 @@
 
   "itemgroup.simplertemplatemod.citrine": "Citrine Group",
   "itemgroup.simplertemplatemod.citrine_items": "Citrine Group",
-  "itemgroup.simplertemplatemod.music_discs": "Music Discs Group"
+  "itemgroup.simplertemplatemod.music_discs": "Music Discs Group",
 
+  "command.simplertemplatemod.warning": "only players can execute this command!",
+  "command.simplertemplatemod.dimension_warning_time": "The current dimension cannot set the time!",
 
+  "command.simplertemplatemod.day":"The time has been set for the day",
+  "command.simplertemplatemod.night":"The time has been set for the night",
+
+  "command.simplertemplatemod.radius": "Only supports up to a maximum radius of 30",
+
+  "command.simplertemplatemod.dimension_warning_weather": "The current dimension cannot set the weather!",
+  "command.simplertemplatemod.sunny":"The weather has been set to a sunny day",
+  "command.simplertemplatemod.rain":"The weather has been set for rainy days",
+
+  "command.simplertemplatemod.explain_kit":"/kit -> Get rid of nearby objects",
+  "command.simplertemplatemod.explain_day":"/day -> Set up daytime",
+  "command.simplertemplatemod.explain_night":"/night -> Set the night",
+  "command.simplertemplatemod.explain_sun":"/sun -> Set up sunny day",
+  "command.simplertemplatemod.explain_rain":"/rain -> Set up rain day"
 }
