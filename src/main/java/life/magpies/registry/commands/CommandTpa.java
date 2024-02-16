@@ -41,6 +41,7 @@ public class CommandTpa {
                 // 向目标玩家发送传送消息
                 targetPlayerEntity.sendMessage(Text.literal(source.getName() + " 向您发起了传送请求").formatted(Formatting.GOLD), false);
                 teleportRequests.put(targetPlayer, source.getName());
+                targetPlayerEntity.sendMessage(Text.literal("接受传送请使用/tpaccept").formatted(Formatting.GOLD), false);
                 source.sendFeedback(() -> Text.literal("传送请求已发送给 " + targetPlayer).formatted(Formatting.GOLD), false);
 
                 // 如果目标玩家不存在或者是自己，则发送相应消息

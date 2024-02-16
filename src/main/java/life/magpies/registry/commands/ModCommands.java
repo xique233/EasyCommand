@@ -11,6 +11,8 @@ public class ModCommands {
         CommandTpa.register();
         CommandTpa.register();
         CommandTpAccept.register();
+        CommandTpc.register();
+        CommandTpcAetp.register();
     }
     public static void registerModCommand() {
         SimplerTemplateMod.LOGGER.debug("Registering mod command for" + SimplerTemplateMod.MOD_ID);
