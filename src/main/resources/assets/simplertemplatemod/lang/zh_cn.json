@@ -95,5 +95,15 @@
   "command.simplertemplatemod.explain_day":"/day -> 设定白天",
   "command.simplertemplatemod.explain_night":"/night -> 设定黑夜",
   "command.simplertemplatemod.explain_sun":"/sun -> 设定晴天",
-  "command.simplertemplatemod.explain_rain":"/rain -> 设定雨天"
+  "command.simplertemplatemod.explain_rain":"/rain -> 设定雨天",
+
+  "command.tpaccept.success": "传送成功",
+  "command.tpaccept.error": "传送时出错",
+  "command.tpaccept.player_not_found": "找不到这名玩家",
+  "command.tpaccept.no_request": "无请求",
+
+  "command.tpa.success": "传送请求已发送",
+  "command.tpa.inquire": "向您发起了传送请求",
+  "command.tpa.error_n1": "你不能发送请求给自己!!!"
+
 }

@@ -45,6 +45,7 @@ public class ModBlocks {
         Registry.register(Registries.ITEM, new Identifier(SimplerTemplateMod.MOD_ID, "citrine_ore"), new BlockItem(CITRINE_ORE, new FabricItemSettings()));
         Registry.register(Registries.BLOCK, new Identifier(SimplerTemplateMod.MOD_ID, "deepslate_citrine_ore"), DEEPSLATE_CITRINE_ORE);
         Registry.register(Registries.ITEM, new Identifier(SimplerTemplateMod.MOD_ID, "deepslate_citrine_ore"), new BlockItem(DEEPSLATE_CITRINE_ORE, new FabricItemSettings()));
+
     }
 
     public static void registerModBlocks() {

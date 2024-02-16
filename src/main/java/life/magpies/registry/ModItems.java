@@ -59,11 +59,11 @@ public class ModItems {
         return registerItem(name, item, ModItemGrounds.MUSIC_DISCS);
     }
 
-    private static Item registerCitrineItems(String name, Item item) {
+    public static Item registerCitrineItems(String name, Item item) {
         return registerItem(name, item, ModItemGrounds.CITRINE_ITEMS);
     }
 
-    private static Item registerItem(String name, Item item, RegistryKey<ItemGroup> group) {
+    public static Item registerItem(String name, Item item, RegistryKey<ItemGroup> group) {
         Item registered = Registry.register(Registries.ITEM, new Identifier(SimplerTemplateMod.MOD_ID, name), item);
         ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(registered));
         return registered;
