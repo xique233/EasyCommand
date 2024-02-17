@@ -78,6 +78,28 @@
 
   "item_group.easycommand.citrine": "黄晶",
   "item_group.easycommand.music_discs": "唱片",
-  "item_group.easycommand.citrine_items": "黄晶工具"
+  "item_group.easycommand.citrine_items": "黄晶工具",
 
+
+  "command.easycommand.day": "已设置白天",
+  "command.easycommand.night": "已设置晚上",
+  "command.easycommand.dimension_warning_time": "当前维度无法设置时间",
+  "command.easycommand.warning": "该命令必须玩家操作",
+
+  "command.easycommand.explain_kit":"/kit -> 清除附近的掉落物 可选填半径最大30",
+  "command.easycommand.explain_day":"/day -> 设定白天",
+  "command.easycommand.explain_night":"/night -> 设定黑夜",
+  "command.easycommand.explain_sun":"/sun -> 设定晴天",
+  "command.easycommand.explain_rain":"/rain -> 设定雨天",
+  "command.easycommand.explain_tpc":"/tpa -> 请求传送到另位玩家处 不兼容多名玩家同时传送到一名玩家处",
+  "command.easycommand.explain_tpa":"/tpc -> 请求传送到另位玩家处 兼容多名玩家同时传送到一名玩家处",
+  "command.easycommand.explain_tpaccept":"/tpaccept -> 同意tpa的请求",
+  "command.easycommand.explain_tpcetp":"/tpcept -> 同意tpc的请求 但是要加指定玩家",
+  "command.easycommand.explain_this":"/this -> 给予自己发光效果并且广播当前世界和位置",
+
+  "command.tpa.error_n1": "你不能发送请求给自己!!!",
+  "command.tpaccept.success": "传送成功",
+  "command.tpaccept.error": "传送时出错",
+  "command.tpaccept.player_not_found": "找不到这名玩家",
+  "command.tpaccept.no_request": "无请求"
 }

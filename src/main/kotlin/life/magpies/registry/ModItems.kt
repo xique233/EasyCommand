@@ -14,8 +14,10 @@ import net.minecraft.item.SwordItem
 import net.minecraft.registry.Registries
 import net.minecraft.registry.Registry
 import net.minecraft.registry.RegistryKey
+import net.minecraft.registry.RegistryKeys
 import net.minecraft.util.Identifier
 import net.minecraft.util.Rarity.RARE
+import net.minecraft.world.gen.feature.PlacedFeature
 
 
 object ModItems {
@@ -23,8 +25,7 @@ object ModItems {
     val CITRINE_SWORD: Item =
         registerCitrineItems("citrine_sword", SwordItem(CitrineToolMaterials.SLIVER, 2, -2.2f, FabricItemSettings()))
     val CITRINE_PICKAXE: Item = registerCitrineItems(
-        "citrine_pickaxe",
-        CitrinePickaxeItem(CitrineToolMaterials.SLIVER, 1, -2.8f, Item.Settings())
+        "citrine_pickaxe", CitrinePickaxeItem(CitrineToolMaterials.SLIVER, 1, -2.8f, Item.Settings())
     )
     val CITRINE_AXE: Item =
         registerCitrineItems("citrine_axe", CitrineAxeItem(CitrineToolMaterials.SLIVER, 5, -3.0f, Item.Settings()))
@@ -38,24 +39,20 @@ object ModItems {
 
     // 唱片
     val MUSIC_DISC_COLOR: Item = registerMusicDiscsItem(
-        "music_disc_color",
-        MusicDiscItem(12, ModSounds.COLOR, FabricItemSettings().maxCount(1).rarity(RARE), 250)
+        "music_disc_color", MusicDiscItem(12, ModSounds.COLOR, FabricItemSettings().maxCount(1).rarity(RARE), 250)
     )
     val MUSIC_DISC_LOVE: Item = registerMusicDiscsItem(
-        "music_disc_love",
-        MusicDiscItem(8, ModSounds.LOVE, FabricItemSettings().maxCount(1).rarity(RARE), 330)
+        "music_disc_love", MusicDiscItem(8, ModSounds.LOVE, FabricItemSettings().maxCount(1).rarity(RARE), 330)
     )
     val MUSIC_DISC_ROMEO: Item = registerMusicDiscsItem(
-        "music_disc_romeo",
-        MusicDiscItem(12, ModSounds.ROMEO, FabricItemSettings().maxCount(1).rarity(RARE), 330)
+        "music_disc_romeo", MusicDiscItem(12, ModSounds.ROMEO, FabricItemSettings().maxCount(1).rarity(RARE), 330)
     )
     val MUSIC_DISC_HAPPINESS: Item = registerMusicDiscsItem(
         "music_disc_happiness",
         MusicDiscItem(12, ModSounds.HAPPINESS, FabricItemSettings().maxCount(1).rarity(RARE), 250)
     )
     val MUSIC_DISC_PUBERTY: Item = registerMusicDiscsItem(
-        "music_disc_puberty",
-        MusicDiscItem(12, ModSounds.PUBERTY, FabricItemSettings().maxCount(1).rarity(RARE), 250)
+        "music_disc_puberty", MusicDiscItem(12, ModSounds.PUBERTY, FabricItemSettings().maxCount(1).rarity(RARE), 250)
     )
     val MUSIC_DISC_PROUD_IDOL: Item = registerMusicDiscsItem(
         "music_disc_proud_idol",
@@ -100,6 +97,11 @@ object ModItems {
     val MUSIC_DISC_BAMBU_DISCO: Item = registerMusicDiscsItem(
         "music_disc_bambo_disco",
         MusicDiscItem(8, ModSounds.BAMBU_DISCO, FabricItemSettings().maxCount(1).rarity(RARE), 200)
+    )
+
+    /* 世界生成矿石 */
+    val CITRINE_ORE_PLACED_KEY: RegistryKey<PlacedFeature> = RegistryKey.of(
+        RegistryKeys.PLACED_FEATURE, Identifier(EasyCommand.MOD_ID, "citrine_ore_custom")
     )
 
 

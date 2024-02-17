@@ -23,16 +23,16 @@ object ModSounds {
     val TOKYO_SPRING_MEETING: SoundEvent = registerSoundEvent("tokyo_spring_meeting")
     val TOKYO_WINTER_MEETING: SoundEvent = registerSoundEvent("tokyo_winter_meeting")
     val TUESDAY_IS_KISS_DAY: SoundEvent = registerSoundEvent("tuesday_is_kiss_day")
-    val BAMBU_DISCO: SoundEvent = registerSoundEvent("bambu_disco") // 注册声音事件
+    val BAMBU_DISCO: SoundEvent = registerSoundEvent("bambu_disco")
 
     // 注册声音事件
     private fun registerSoundEvent(name: String): SoundEvent {
-        val id: Identifier = Identifier(EasyCommand.MOD_ID, name)
+        val id = Identifier(EasyCommand.MOD_ID, name)
         return Registry.register(Registries.SOUND_EVENT, id, SoundEvent.of(id))
     }
 
     // 声音日志
-    fun registerSounds() {
-        System.out.println("Registering ModSounds for " + EasyCommand.MOD_ID)
+    fun registerSoundsLog() {
+        EasyCommand.logger.debug("Registering ModSounds for " + EasyCommand.MOD_ID)
     }
 }
