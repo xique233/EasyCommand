@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "simplertemplatemod",
+	"id": "easycommand",
 	"version": "${version}",
-	"name": "simplerTemplateMod",
+	"name": "EasyCommand",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"Me!"
@@ -12,27 +12,37 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/simplertemplatemod/icon.png",
+	"icon": "assets/easycommand/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"life.magpies.SimplerTemplateMod"
+			{
+				"value": "life.magpies.EasyCommand",
+				"adapter": "kotlin"
+			}
 		],
 		"client": [
-			"life.magpies.SimplerTemplateClient"
+			{
+				"value": "life.magpies.EasyCommandClient",
+				"adapter": "kotlin"
+			}
 		],
 		"fabric-datagen": [
-			"life.magpies.SimplerTemplateModDataGenerator"
+			{
+				"value": "life.magpies.EasyCommandDataGenerator",
+				"adapter": "kotlin"
+			}
 		]
 	},
 	"mixins": [
-		"simplertemplatemod.mixins.json"
+		"easycommand.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.15.6",
+		"fabricloader": ">=0.15.7",
 		"minecraft": "~1.20.4",
 		"java": ">=17",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"fabric-language-kotlin": ">=1.9.22"
 	},
 	"suggests": {
 		"another-mod": "*"

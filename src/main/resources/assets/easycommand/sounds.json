@@ -1,0 +1,162 @@
+{
+  "color": {
+    "category": "record",
+    "subtitle": "subtitles.easycommand.color",
+    "sounds": [
+      {
+        "name": "easycommand:color",
+        "stream": true
+      }
+    ]
+  },
+  "the_world_is_falling_in_love": {
+    "category": "record",
+    "subtitle": "subtitles.easycommand.the_world_is_falling_in_love",
+    "sounds": [
+      {
+        "name": "easycommand:the_world_is_falling_in_love",
+        "stream": true
+      }
+    ]
+  },
+  "congratulations_and_prosperity": {
+    "category": "record",
+    "subtitle": "subtitles.easycommand.congratulations_and_prosperity",
+    "sounds": [
+      {
+        "name": "easycommand:congratulations_and_prosperity",
+        "stream": true
+      }
+    ]
+  },
+  "romeo": {
+    "category": "record",
+    "subtitle": "subtitles.easycommand.romeo",
+    "sounds": [
+      {
+        "name": "easycommand:romeo",
+        "stream": true
+      }
+    ]
+  },
+  "happiness": {
+    "category": "record",
+    "subtitle": "subtitles.easycommand.happiness",
+    "sounds": [
+      {
+        "name": "easycommand:happiness",
+        "stream": true
+      }
+    ]
+  },
+  "puberty": {
+    "category": "record",
+    "subtitle": "subtitles.easycommand.puberty",
+    "sounds": [
+      {
+        "name": "easycommand:puberty",
+        "stream": true
+      }
+    ]
+  },
+  "proud_idol": {
+    "category": "record",
+    "subtitle": "subtitles.easycommand.proud_idol",
+    "sounds": [
+      {
+        "name": "easycommand:proud_idol",
+        "stream": true
+      }
+    ]
+  },
+  "good_friday_morning": {
+    "category": "record",
+    "subtitle": "subtitles.easycommand.good_friday_morning",
+    "sounds": [
+      {
+        "name": "easycommand:good_friday_morning",
+        "stream": true
+      }
+    ]
+  },
+  "all_i_can_give_you": {
+    "category": "record",
+    "subtitle": "subtitles.easycommand.all_i_can_give_you",
+    "sounds": [
+      {
+        "name": "easycommand:all_i_can_give_you",
+        "stream": true
+      }
+    ]
+  },
+  "the_scandal_on_thursday": {
+    "category": "record",
+    "subtitle": "subtitles.easycommand.the_scandal_on_thursday",
+    "sounds": [
+      {
+        "name": "easycommand:the_scandal_on_thursday",
+        "stream": true
+      }
+    ]
+  },
+  "the_oath_of_the_heart": {
+    "category": "record",
+    "subtitle": "subtitles.easycommand.the_oath_of_the_heart",
+    "sounds": [
+      {
+        "name": "easycommand:the_oath_of_the_heart",
+        "stream": true
+      }
+    ]
+  },
+  "tokyo_summer_meeting": {
+    "category": "record",
+    "subtitle": "subtitles.easycommand.tokyo_summer_meeting",
+    "sounds": [
+      {
+        "name": "easycommand:tokyo_summer_meeting",
+        "stream": true
+      }
+    ]
+  },
+  "tokyo_spring_meeting": {
+    "category": "record",
+    "subtitle": "subtitles.easycommand.tokyo_spring_meeting",
+    "sounds": [
+      {
+        "name": "easycommand:tokyo_spring_meeting",
+        "stream": true
+      }
+    ]
+  },
+  "tuesday_is_kiss_day": {
+    "category": "record",
+    "subtitle": "subtitles.easycommand.tuesday_is_kiss_day",
+    "sounds": [
+      {
+        "name": "easycommand:tuesday_is_kiss_day",
+        "stream": true
+      }
+    ]
+  },
+  "tokyo_winter_meeting": {
+    "category": "record",
+    "subtitle": "subtitles.easycommand.tokyo_winter_meeting",
+    "sounds": [
+      {
+        "name": "easycommand:tokyo_winter_meeting",
+        "stream": true
+      }
+    ]
+  },
+  "bambu_disco": {
+    "category": "record",
+    "subtitle": "subtitles.easycommand.bambu_disco",
+    "sounds": [
+      {
+        "name": "easycommand:bambu_disco",
+        "stream": true
+      }
+    ]
+  }
+}
