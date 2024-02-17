@@ -13,6 +13,7 @@ public class ModCommands {
         CommandTpAccept.register();
         CommandTpc.register();
         CommandTpcAetp.register();
+        CommandHere.register();
     }
     public static void registerModCommand() {
         SimplerTemplateMod.LOGGER.debug("Registering mod command for" + SimplerTemplateMod.MOD_ID);

@@ -19,7 +19,7 @@ import static net.minecraft.server.command.CommandManager.literal;
 public class CommandTpcAetp {
     public static void register() {
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
-            dispatcher.register(literal("tpcetp")
+            dispatcher.register(literal("tpcept")
                     .requires(source -> source.hasPermissionLevel(0))
                     .then(CommandManager.argument("player", StringArgumentType.word())
                             .suggests(PlayerSuggestionProvider.suggestPlayers)

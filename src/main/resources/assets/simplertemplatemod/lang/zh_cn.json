@@ -96,6 +96,11 @@
   "command.simplertemplatemod.explain_night":"/night -> 设定黑夜",
   "command.simplertemplatemod.explain_sun":"/sun -> 设定晴天",
   "command.simplertemplatemod.explain_rain":"/rain -> 设定雨天",
+  "command.simplertemplatemod.explain_tpc":"/tpa -> 请求传送到另位玩家处 不兼容多名玩家同时传送到一名玩家处",
+  "command.simplertemplatemod.explain_tpa":"/tpc -> 请求传送到另位玩家处 兼容多名玩家同时传送到一名玩家处",
+  "command.simplertemplatemod.explain_tpaccept":"/tpaccept -> 同意tpa的请求",
+  "command.simplertemplatemod.explain_tpcetp":"/tpcept -> 同意tpc的请求 但是要加指定玩家",
+  "command.simplertemplatemod.explain_this":"/this -> 给予自己发光效果并且广播当前世界和位置",
 
   "command.tpaccept.success": "传送成功",
   "command.tpaccept.error": "传送时出错",

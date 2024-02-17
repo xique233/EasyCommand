@@ -25,6 +25,11 @@ public class CommandList {
         source.sendMessage(Text.translatable("command." + SimplerTemplateMod.MOD_ID + ".explain_night"));
         source.sendMessage(Text.translatable("command." + SimplerTemplateMod.MOD_ID + ".explain_sun"));
         source.sendMessage(Text.translatable("command." + SimplerTemplateMod.MOD_ID + ".explain_rain"));
+        source.sendMessage(Text.translatable("command." + SimplerTemplateMod.MOD_ID + ".explain_this"));
+        source.sendMessage(Text.translatable("command." + SimplerTemplateMod.MOD_ID + ".explain_tpa"));
+        source.sendMessage(Text.translatable("command." + SimplerTemplateMod.MOD_ID + ".explain_tpc"));
+        source.sendMessage(Text.translatable("command." + SimplerTemplateMod.MOD_ID + ".explain_tpaccept"));
+        source.sendMessage(Text.translatable("command." + SimplerTemplateMod.MOD_ID + ".explain_tpcetp"));
         return 1;
     }
 }
