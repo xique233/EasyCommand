@@ -64,11 +64,11 @@ object CommandTpa {
                 ).formatted(Formatting.RED)
             }, false)
         } else {
-            source.sendFeedback({
+            source.sendError(
                 Text.translatable(
                     "command.tpa.error_n1"
-                ).formatted(Formatting.RED)
-            }, false)
+                )
+            )
         }
         return 1
     }

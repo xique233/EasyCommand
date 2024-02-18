@@ -86,6 +86,11 @@
   "command.easycommand.dimension_warning_time": "当前维度无法设置时间",
   "command.easycommand.warning": "该命令必须玩家操作",
 
+  "command.easycommand.rain": "已设置雨天",
+  "command.easycommand.sunny": "已设置晴天",
+  "command.easycommand.dimension_warning_weather": "当前维度无法设置天气",
+  "command.easycommand.warning": "该命令必须玩家操作",
+
   "command.easycommand.explain_kit":"/kit -> 清除附近的掉落物 可选填半径最大30",
   "command.easycommand.explain_day":"/day -> 设定白天",
   "command.easycommand.explain_night":"/night -> 设定黑夜",

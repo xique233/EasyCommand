@@ -8,6 +8,8 @@ object ModCommands {
         CommandDay.register()
         CommandTpa.register()
         CommandTpAccept.register()
+        CommandTpc.register()
+        CommandTpcAetp.register()
         CommandList.register()
     }
 }
