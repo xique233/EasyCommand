@@ -3,6 +3,8 @@ package life.magpies.registry.commands
 import com.mojang.brigadier.CommandDispatcher
 import com.mojang.brigadier.context.CommandContext
 import life.magpies.EasyCommand
+import life.magpies.registry.config.ModConfig.day
+import life.magpies.registry.config.ModConfig.night
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback
 import net.minecraft.command.CommandRegistryAccess
 import net.minecraft.server.command.CommandManager
@@ -17,7 +19,7 @@ object CommandDay {
             dispatcher.register(CommandManager.literal("day")
                 .requires { source: ServerCommandSource ->
                     source.hasPermissionLevel(
-                        3
+                        day
                     )
                 }
                 .executes { ctx: CommandContext<ServerCommandSource> ->
@@ -30,7 +32,7 @@ object CommandDay {
             dispatcher.register(CommandManager.literal("night")
                 .requires { source: ServerCommandSource ->
                     source.hasPermissionLevel(
-                        3
+                        night
                     )
                 }
                 .executes { ctx: CommandContext<ServerCommandSource> ->

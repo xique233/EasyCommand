@@ -106,5 +106,7 @@
   "command.tpaccept.success": "传送成功",
   "command.tpaccept.error": "传送时出错",
   "command.tpaccept.player_not_found": "找不到这名玩家",
-  "command.tpaccept.no_request": "无请求"
+  "command.tpaccept.no_request": "无请求",
+
+  "command.easycommand.radius": "超过最大限制范围"
 }

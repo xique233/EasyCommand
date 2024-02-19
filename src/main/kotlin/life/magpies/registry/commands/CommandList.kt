@@ -3,6 +3,7 @@ package life.magpies.registry.commands
 import com.mojang.brigadier.CommandDispatcher
 import com.mojang.brigadier.context.CommandContext
 import life.magpies.EasyCommand
+import life.magpies.registry.config.ModConfig
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback
 import net.minecraft.command.CommandRegistryAccess
 import net.minecraft.server.command.CommandManager
@@ -16,7 +17,7 @@ object CommandList {
             dispatcher.register(CommandManager.literal("listEasy")
                 .requires { source: ServerCommandSource ->
                     source.hasPermissionLevel(
-                        1
+                        ModConfig.list
                     )
                 }
                 .executes { ctx -> execute(ctx) }

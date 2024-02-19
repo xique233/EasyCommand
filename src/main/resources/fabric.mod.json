@@ -3,13 +3,13 @@
 	"id": "easycommand",
 	"version": "${version}",
 	"name": "EasyCommand",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "简单的指令 也许后面也会添加其他指令",
 	"authors": [
-		"Me!"
+		"magpie"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/xique233/",
+		"sources": "https://github.com/xique233/Simplertemplatemod"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/easycommand/icon.png",
@@ -30,6 +30,12 @@
 		"fabric-datagen": [
 			{
 				"value": "life.magpies.EasyCommandDataGenerator",
+				"adapter": "kotlin"
+			}
+		],
+		"modmenu": [
+			{
+				"value": "life.magpies.registry.config.ModMenuConfigScreen",
 				"adapter": "kotlin"
 			}
 		]

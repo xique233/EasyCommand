@@ -3,6 +3,7 @@ package life.magpies.registry.commands
 import com.mojang.brigadier.CommandDispatcher
 import com.mojang.brigadier.context.CommandContext
 import life.magpies.EasyCommand
+import life.magpies.registry.config.ModConfig
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback
 import net.minecraft.command.CommandRegistryAccess
 import net.minecraft.server.command.CommandManager
@@ -17,7 +18,7 @@ object CommandWeather {
             dispatcher.register(CommandManager.literal("sunny")
                 .requires { source: ServerCommandSource ->
                     source.hasPermissionLevel(
-                        3
+                        ModConfig.sun
                     )
                 }
                 .executes { ctx: CommandContext<ServerCommandSource> ->
@@ -30,7 +31,7 @@ object CommandWeather {
             dispatcher.register(CommandManager.literal("rain")
                 .requires { source: ServerCommandSource ->
                     source.hasPermissionLevel(
-                        3
+                        ModConfig.rain
                     )
                 }
                 .executes { ctx: CommandContext<ServerCommandSource> ->

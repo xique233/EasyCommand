@@ -20,7 +20,7 @@ object CommandTpc {
             dispatcher.register(
                 CommandManager.literal("tpc")
                     .requires { source: ServerCommandSource ->
-                        source.hasPermissionLevel(
+                            source.hasPermissionLevel(
                             0
                         )
                     }

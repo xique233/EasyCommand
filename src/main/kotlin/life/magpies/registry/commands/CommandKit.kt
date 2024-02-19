@@ -3,7 +3,8 @@ package life.magpies.registry.commands
 import com.mojang.brigadier.CommandDispatcher
 import com.mojang.brigadier.arguments.IntegerArgumentType
 import com.mojang.brigadier.context.CommandContext
-import life.magpies.EasyCommand
+import life.magpies.registry.config.ModConfig.kit
+import life.magpies.registry.config.ModConfig.kit_Radius
 
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback
 import net.minecraft.command.CommandRegistryAccess
@@ -19,6 +20,11 @@ object CommandKit {
         CommandRegistrationCallback.EVENT.register(CommandRegistrationCallback { dispatcher: CommandDispatcher<ServerCommandSource?>, registryAccess: CommandRegistryAccess?, environment: RegistrationEnvironment? ->
             dispatcher.register(
                 CommandManager.literal("kit")
+                    .requires { source: ServerCommandSource ->
+                        source.hasPermissionLevel(
+                            kit
+                        )
+                    }
                     .executes { context: CommandContext<ServerCommandSource> ->
                         execute(
                             context,
@@ -38,15 +44,15 @@ object CommandKit {
         })
     }
 
-    private fun execute(context: CommandContext<ServerCommandSource>, radius: Int): Int {
-        if (radius > 30) {
-            context.source.sendFeedback({
-                Text.translatable((("command." + EasyCommand.MOD_ID) + ".radius"))
+    private fun execute(ctx: CommandContext<ServerCommandSource>, radius: Int): Int {
+        if (radius > kit_Radius) {
+            ctx.source.sendFeedback({
+                Text.of((("超过最大限制范围 $kit_Radius")))
             }, false)
             return 0
         }
         // 获取玩家的对象
-        val player = context.source.player!!
+        val player = CommandUtils.getPlayer(ctx) ?: return 0
         val playPos = player.pos
         // 获取世界对象
         val world = player.entityWorld
@@ -68,7 +74,7 @@ object CommandKit {
                 entity.kill()
                 killEntities++
             }
-        context.source.sendFeedback({
+        ctx.source.sendFeedback({
             Text.literal(
                 "清理了附近的${killEntities}个掉落物"
             )
